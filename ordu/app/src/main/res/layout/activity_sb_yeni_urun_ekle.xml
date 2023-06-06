@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sb_yeni_urun_ekle">
+
+    <ImageView
+        android:id="@+id/sb_iv_urunfoto_ekle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/sb_etxt_ue_isim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_btn_ana"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/tsb_extView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="618dp"
+        android:text="YENİ ÜRÜN EKLEME SAYFASI"
+        android:textColor="#0B2AD6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sb_switch1"
+        app:layout_constraintEnd_toEndOf="@+id/sb_btn_ana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sb_btn_ana"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:text="ANASAYFA"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sb_iv_urunfoto_ekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tsb_extView2" />
+
+    <EditText
+        android:id="@+id/sb_etxt_ue_fiyat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="ürün fiyatı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sb_etxt_cins_urunekle"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_etxt_ue_isim" />
+
+    <Button
+        android:id="@+id/sb_btn_ue_urungir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ürün Tanımla"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sb_chk_uzum"
+        app:layout_constraintEnd_toStartOf="@+id/sb_chk_uzum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_etxt_cins_urunekle" />
+
+    <EditText
+        android:id="@+id/sb_etxt_cins_urunekle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="ürün tanımı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sb_btn_ue_urungir"
+        app:layout_constraintEnd_toStartOf="@+id/sb_chk_kiraz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_etxt_ue_fiyat" />
+
+    <EditText
+        android:id="@+id/sb_etxt_ue_isim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="ürün isimi"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sb_etxt_ue_fiyat"
+        app:layout_constraintEnd_toStartOf="@+id/sb_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_iv_urunfoto_ekle" />
+
+    <Spinner
+        android:id="@+id/sb_spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_etxt_ue_isim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sb_etxt_ue_isim"
+        app:layout_constraintTop_toTopOf="@+id/sb_etxt_ue_isim" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_etxt_cins_urunekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sb_etxt_ue_fiyat"
+        app:layout_constraintTop_toTopOf="@+id/sb_spinner">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ürün kutusu rengi" />
+
+        <RadioButton
+            android:id="@+id/sb_rdb_mavi"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:text="mavi" />
+
+        <RadioButton
+            android:id="@+id/sb_rdb_kirmizi"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:text="kırmızı" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="13dp"
+        android:text="hangi meyveler eklensin"
+        app:layout_constraintBottom_toTopOf="@+id/sb_chk_kiraz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sb_etxt_cins_urunekle" />
+
+    <CheckBox
+        android:id="@+id/sb_chk_kiraz"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="67dp"
+        android:text="kiraz"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_chk_uzum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sb_etxt_cins_urunekle"
+        app:layout_constraintTop_toTopOf="@+id/sb_etxt_cins_urunekle" />
+
+    <CheckBox
+        android:id="@+id/sb_chk_uzum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="121dp"
+        android:text="üzüm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sb_btn_ue_urungir"
+        app:layout_constraintTop_toBottomOf="@+id/sb_btn_ue_urungir" />
+
+    <Switch
+        android:id="@+id/sb_switch1"
+        android:layout_width="112dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="56dp"
+        android:text="yöresel müzik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sb_chk_uzum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tsb_extView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

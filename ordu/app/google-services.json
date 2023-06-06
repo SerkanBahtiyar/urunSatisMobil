@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "435894611397",
+    "project_id": "biluy-6f93d",
+    "storage_bucket": "biluy-6f93d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435894611397:android:c1bb509abf121acfd0efac",
+        "android_client_info": {
+          "package_name": "com.nexis.ordu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435894611397-p1roq2uikvc111r7h5dua6v0nmm1evl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nexis.ordu",
+            "certificate_hash": "4e6d01a0ada80a78bc2af6d9f9099cad64b6a515"
+          }
+        },
+        {
+          "client_id": "435894611397-h3h9ha567g3ga7icdiig9cbtrpe409cu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBriGQWw8m4QoeHHnn_iWclpYDjZl-Bg9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435894611397-h3h9ha567g3ga7icdiig9cbtrpe409cu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
